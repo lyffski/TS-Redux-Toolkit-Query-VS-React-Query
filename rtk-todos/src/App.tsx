@@ -5,7 +5,7 @@ import { todoApi, Todo } from "./store";
 
 function TodoApp() {
   const { data: todos } = todoApi.useGetAllQuery();
-  const [deleteTodo] = todoApi.useDeleteTodoMutation();
+  const [deleteTodo] = todoApi.useDeleteTodoMutation(); // thos anme as concate and crated artiffcialy by RTK redux use-prefix + {name ob endpoint method} + query if build.quiry / mutataion if build.mutation
   const [updateTodo] = todoApi.useUpdateTodoMutation();
   const [addTodo] = todoApi.useAddTodoMutation();
 
